@@ -12,7 +12,7 @@ This repository is an open toolkit. The idea is simple: contribute a skill that 
 
 | Skill | Category | Description |
 |-------|----------|-------------|
-| *Coming soon* | — | Submit the first one → |
+| [Pitch Deck Triage](/skills/pitch-deck-triage) | Sourcing & screening | Structured teardown of inbound pitch decks. Extracts financials, team, timing thesis, and deal terms. Flags gaps, surfaces questions, finds comps (including dead ones). IC-ready summary + full analysis. |
 
 > **Looking for a specific workflow?** Open an [issue](../../issues) and describe what you're trying to automate. Chances are someone else needs it too.
 
@@ -66,6 +66,12 @@ Most PE/VC teams are building AI workflows behind closed doors, which makes sens
 ## License
 
 [MIT](LICENSE) — use these skills however you want, commercially or otherwise.
+
+## Stay in the loop
+
+New skills, demos of vibe-coded tools for IPs and portfolio companies, and playbooks that actually get used. People in the space share what's working. Mails sent when ready, not on a schedule.
+
+→ [pevctoolkit on Buttondown](https://buttondown.com/pevctoolkit)
 
 ## Related
 
