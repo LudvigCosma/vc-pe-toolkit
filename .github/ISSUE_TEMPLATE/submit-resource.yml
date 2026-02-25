@@ -1,0 +1,168 @@
+name: "\U0001F680 Submit a Resource"
+description: Submit a skill, workflow, or playbook to the VC/PE Toolkit
+title: "[Submit]: "
+labels: ["submission", "pending-review"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Welcome!
+
+        Thank you for contributing to the VC/PE Toolkit. Use this form to submit a skill, workflow, or playbook.
+
+        **Guidelines:**
+        - Ensure your resource is unique and provides genuine value to PE/VC professionals.
+        - Only the original author may submit — this helps us verify authenticity.
+        - Submissions are reviewed for quality and security before listing.
+
+  - type: input
+    id: author_name
+    attributes:
+      label: Author Name
+      description: "Your name, alias, or GitHub username"
+      placeholder: "Jane Doe or janedoe"
+    validations:
+      required: true
+
+  - type: input
+    id: author_link
+    attributes:
+      label: Author Link
+      description: "Link to your GitHub, LinkedIn, or personal website"
+      placeholder: "https://github.com/janedoe"
+    validations:
+      required: true
+
+  - type: input
+    id: resource_name
+    attributes:
+      label: Resource Name
+      description: A short, descriptive name for your submission
+      placeholder: "e.g., gemini-book-dd, lpa-term-extractor"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: resource_type
+    attributes:
+      label: Type
+      description: "What kind of resource are you submitting?"
+      options:
+        - "Skill — A SKILL.md prompt an AI agent can follow"
+        - "Workflow — A step-by-step playbook using AI tools"
+        - "Template — A reusable output format or framework"
+    validations:
+      required: true
+
+  - type: textarea
+    id: resource_file
+    attributes:
+      label: Files
+      description: "Drag and drop your SKILL.md, WORKFLOW.md, or a .zip of the folder"
+      placeholder: "Drag your files here..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: "What does it do, what inputs does it expect, and what does the user get back? (1-3 sentences)"
+      placeholder: "Describe your resource..."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: "Where does this sit in the investment lifecycle?"
+      options:
+        - "Sourcing & Screening"
+        - "Due Diligence"
+        - "Deal Execution"
+        - "Portfolio Monitoring"
+        - "Fundraising & IR"
+        - "Back Office"
+        - "Legal"
+        - "Meta"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform(s)
+      description: "Which platform(s) was this built and tested on?"
+      options:
+        - "Claude (Anthropic)"
+        - "Cowork (Anthropic)"
+        - "Gemini (Google)"
+        - "OpenAI / ChatGPT"
+        - "Multiple platforms"
+        - "Platform-agnostic"
+        - "Other"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: license
+    attributes:
+      label: License
+      description: Select the license for your resource
+      options:
+        - MIT
+        - Apache-2.0
+        - CC-BY-4.0
+        - CC-BY-SA-4.0
+        - CC-BY-NC-4.0
+        - All Rights Reserved
+        - Other (specify below)
+    validations:
+      required: true
+
+  - type: input
+    id: license_other
+    attributes:
+      label: Other License
+      description: If you selected "Other" above, please specify
+      placeholder: "e.g., BSD-2-Clause, Proprietary"
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional_comments
+    attributes:
+      label: Additional Comments
+      description: "Optional — any additional context, special features, or acknowledgments"
+      placeholder: "e.g., why you created this, known limitations, tools required..."
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Submission Checklist
+      description: Please confirm the following
+      options:
+        - label: "I have checked that this resource hasn't already been submitted"
+          required: true
+        - label: "My resource provides genuine value and any limitations are clearly stated"
+          required: true
+        - label: "No proprietary or sensitive data is included — only synthetic or anonymized examples"
+          required: true
+        - label: "I am submitting only ONE resource in this form"
+          required: true
+        - label: "I understand that submissions are reviewed and may be rejected"
+          required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ## What happens next?
+
+        1. **Review**: A maintainer will review your submission
+        2. **Result**: If approved, your resource will be added to the toolkit. Either way, we'll update you in the comments.
+
+        Thank you for contributing!
