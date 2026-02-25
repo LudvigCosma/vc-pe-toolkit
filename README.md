@@ -38,6 +38,15 @@ A step-by-step playbook for getting a specific job done with AI tools. Could inv
 
 ---
 
+## Stay in the Loop
+
+New resources, demos, and playbooks that actually get used.
+Mails sent when ready, not on a schedule.
+
+**[Subscribe on Buttondown](https://buttondown.com/pevctoolkit)**
+
+---
+
 ## Browse
 
 <p align="center">
@@ -182,14 +191,6 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for the full guide.
 ## Why Open Source This?
 
 Most PE/VC teams are building AI workflows behind closed doors, which makes sense for proprietary strategy — but not for operational tooling. The mechanics of parsing a CIM or formatting an LP report are not competitive advantages. Sharing them makes everyone faster.
-
----
-
-## Stay in the Loop
-
-New resources, demos, and playbooks that actually get used. Mails sent when ready, not on a schedule.
-
-**[Subscribe on Buttondown](https://buttondown.com/pevctoolkit)**
 
 ---
 
