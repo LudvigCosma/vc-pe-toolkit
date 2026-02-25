@@ -1,5 +1,5 @@
 name: "\U0001F680 Submit a Resource"
-description: Submit a skill, workflow, or playbook to the VC/PE Toolkit
+description: Submit a tool, MCP server, skill, playbook, or workflow to the VC/PE Toolkit
 title: "[Submit]: "
 labels: ["submission", "pending-review"]
 
@@ -9,11 +9,10 @@ body:
       value: |
         ## Welcome!
 
-        Thank you for contributing to the VC/PE Toolkit. Use this form to submit a skill, workflow, or playbook.
+        Thank you for contributing to the VC/PE Toolkit. Use this form to submit a tool, MCP server, skill, workflow, or playbook.
 
         **Guidelines:**
         - Ensure your resource is unique and provides genuine value to PE/VC professionals.
-        - Only the original author may submit — this helps us verify authenticity.
         - Submissions are reviewed for quality and security before listing.
 
   - type: input
@@ -39,7 +38,7 @@ body:
     attributes:
       label: Resource Name
       description: A short, descriptive name for your submission
-      placeholder: "e.g., gemini-book-dd, lpa-term-extractor"
+      placeholder: "e.g., pitch-deck-triage, sec-edgar-mcp, affinity-crm"
     validations:
       required: true
 
@@ -49,20 +48,32 @@ body:
       label: Type
       description: "What kind of resource are you submitting?"
       options:
+        - "Tool Suggestion — An AI-native tool PE/VC teams should know about"
+        - "MCP Server — An MCP server useful for investment workflows"
         - "Skill — A SKILL.md prompt an AI agent can follow"
         - "Workflow — A step-by-step playbook using AI tools"
+        - "Playbook — An end-to-end guide combining tools, MCPs, and skills"
         - "Template — A reusable output format or framework"
     validations:
       required: true
+
+  - type: input
+    id: resource_url
+    attributes:
+      label: URL
+      description: "Link to the tool, MCP server GitHub repo, or relevant website (required for tool suggestions and MCP servers)"
+      placeholder: "https://github.com/example/mcp-server or https://www.toolname.com"
+    validations:
+      required: false
 
   - type: textarea
     id: resource_file
     attributes:
       label: Files
-      description: "Drag and drop your SKILL.md, WORKFLOW.md, or a .zip of the folder"
+      description: "Drag and drop your SKILL.md, WORKFLOW.md, PLAYBOOK.md, or a .zip of the folder. Optional for tool suggestions and MCP server recommendations."
       placeholder: "Drag your files here..."
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: description
@@ -77,16 +88,22 @@ body:
     id: category
     attributes:
       label: Category
-      description: "Where does this sit in the investment lifecycle?"
+      description: "Where does this resource fit in the toolkit?"
       options:
-        - "Sourcing & Screening"
-        - "Due Diligence"
-        - "Deal Execution"
-        - "Portfolio Monitoring"
-        - "Fundraising & IR"
-        - "Back Office"
-        - "Legal"
-        - "Meta"
+        - "Tools — Deal CRMs"
+        - "Tools — Deal Sourcing"
+        - "Tools — Due Diligence"
+        - "Tools — Portfolio Monitoring"
+        - "Tools — Data Rooms"
+        - "Tools — LP Reporting"
+        - "Tools — Market Intelligence"
+        - "Tools — Value Creation"
+        - "MCP — Financial Data"
+        - "MCP — Research & Web"
+        - "MCP — Documents & Files"
+        - "MCP — Productivity"
+        - "Skills & Workflows"
+        - "Playbooks"
     validations:
       required: true
 
@@ -94,7 +111,7 @@ body:
     id: platform
     attributes:
       label: Platform(s)
-      description: "Which platform(s) was this built and tested on?"
+      description: "Which platform(s) was this built and tested on? (Select 'N/A' for tool suggestions)"
       options:
         - "Claude (Anthropic)"
         - "Cowork (Anthropic)"
@@ -102,6 +119,7 @@ body:
         - "OpenAI / ChatGPT"
         - "Multiple platforms"
         - "Platform-agnostic"
+        - "N/A (tool suggestion)"
         - "Other"
     validations:
       required: true
@@ -110,7 +128,7 @@ body:
     id: license
     attributes:
       label: License
-      description: Select the license for your resource
+      description: "Select the license for your resource (select 'N/A' for tool suggestions)"
       options:
         - MIT
         - Apache-2.0
@@ -118,6 +136,7 @@ body:
         - CC-BY-SA-4.0
         - CC-BY-NC-4.0
         - All Rights Reserved
+        - "N/A (tool suggestion)"
         - Other (specify below)
     validations:
       required: true
