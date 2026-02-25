@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 200">
+  <defs>
+    <linearGradient id="card-bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e293b"/>
+      <stop offset="100%" style="stop-color:#0f172a"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(0,0)">
+    <rect x="0" y="0" width="195" height="85" rx="8" fill="url(#card-bg)" stroke="#334155" stroke-width="1"/>
+    <text x="15" y="22" fill="#3b82f6" font-family="system-ui, sans-serif" font-size="11" font-weight="700">01</text>
+    <text x="15" y="44" fill="#f1f5f9" font-family="system-ui, sans-serif" font-size="15" font-weight="600">Sourcing</text>
+    <text x="15" y="62" fill="#64748b" font-family="system-ui, sans-serif" font-size="11">Deal screening &amp;</text>
+    <text x="15" y="75" fill="#64748b" font-family="system-ui, sans-serif" font-size="11">target identification</text>
+    <rect x="208" y="0" width="195" height="85" rx="8" fill="url(#card-bg)" stroke="#334155" stroke-width="1"/>
+    <text x="223" y="22" fill="#3b82f6" font-family="system-ui, sans-serif" font-size="11" font-weight="700">02</text>
+    <text x="223" y="44" fill="#f1f5f9" font-family="system-ui, sans-serif" font-size="15" font-weight="600">Due Diligence</text>
+    <text x="223" y="62" fill="#64748b" font-family="system-ui, sans-serif" font-size="11">CIM analysis, financial</text>
+    <text x="223" y="75" fill="#64748b" font-family="system-ui, sans-serif" font-size="11">review &amp; risk flagging</text>
+    <rect x="416" y="0" width="195" height="85" rx="8" fill="url(#card-bg)" stroke="#334155" stroke-width="1"/>
+    <text x="431" y="22" fill="#8b5cf6" font-family="system-ui, sans-serif" font-size="11" font-weight="700">03</text>
+    <text x="431" y="44" fill="#f1f5f9" font-family="system-ui, sans-serif" font-size="15" font-weight="600">Execution</text>
+    <text x="431" y="62" fill="#64748b" font-family="system-ui, sans-serif" font-size="11">Term sheets, docs</text>
+    <text x="431" y="75" fill="#64748b" font-family="system-ui, sans-serif" font-size="11">&amp; data room review</text>
+    <rect x="624" y="0" width="195" height="85" rx="8" fill="url(#card-bg)" stroke="#334155" stroke-width="1"/>
+    <text x="639" y="22" fill="#8b5cf6" font-family="system-ui, sans-serif" font-size="11" font-weight="700">04</text>
+    <text x="639" y="44" fill="#f1f5f9" font-family="system-ui, sans-serif" font-size="15" font-weight="600">Monitoring</text>
+    <text x="639" y="62" fill="#64748b" font-family="system-ui, sans-serif" font-size="11">KPI dashboards &amp;</text>
+    <text x="639" y="75" fill="#64748b" font-family="system-ui, sans-serif" font-size="11">portfolio reporting</text>
+  </g>
+  <g transform="translate(0,100)">
+    <rect x="0" y="0" width="195" height="85" rx="8" fill="url(#card-bg)" stroke="#334155" stroke-width="1"/>
+    <text x="15" y="22" fill="#ec4899" font-family="system-ui, sans-serif" font-size="11" font-weight="700">05</text>
+    <text x="15" y="44" fill="#f1f5f9" font-family="system-ui, sans-serif" font-size="15" font-weight="600">Fundraising &amp; IR</text>
+    <text x="15" y="62" fill="#64748b" font-family="system-ui, sans-serif" font-size="11">LP reporting &amp; fund</text>
+    <text x="15" y="75" fill="#64748b" font-family="system-ui, sans-serif" font-size="11">performance summaries</text>
+    <rect x="208" y="0" width="195" height="85" rx="8" fill="url(#card-bg)" stroke="#334155" stroke-width="1"/>
+    <text x="223" y="22" fill="#ec4899" font-family="system-ui, sans-serif" font-size="11" font-weight="700">06</text>
+    <text x="223" y="44" fill="#f1f5f9" font-family="system-ui, sans-serif" font-size="15" font-weight="600">Back Office</text>
+    <text x="223" y="62" fill="#64748b" font-family="system-ui, sans-serif" font-size="11">Compliance, formatting</text>
+    <text x="223" y="75" fill="#64748b" font-family="system-ui, sans-serif" font-size="11">&amp; data extraction</text>
+    <rect x="416" y="0" width="195" height="85" rx="8" fill="url(#card-bg)" stroke="#334155" stroke-width="1"/>
+    <text x="431" y="22" fill="#f59e0b" font-family="system-ui, sans-serif" font-size="11" font-weight="700">07</text>
+    <text x="431" y="44" fill="#f1f5f9" font-family="system-ui, sans-serif" font-size="15" font-weight="600">Legal</text>
+    <text x="431" y="62" fill="#64748b" font-family="system-ui, sans-serif" font-size="11">Contract review, NDA</text>
+    <text x="431" y="75" fill="#64748b" font-family="system-ui, sans-serif" font-size="11">triage &amp; risk assessment</text>
+    <rect x="624" y="0" width="195" height="85" rx="8" fill="url(#card-bg)" stroke="#334155" stroke-width="1"/>
+    <text x="639" y="22" fill="#f59e0b" font-family="system-ui, sans-serif" font-size="11" font-weight="700">08</text>
+    <text x="639" y="44" fill="#f1f5f9" font-family="system-ui, sans-serif" font-size="15" font-weight="600">Meta Skills</text>
+    <text x="639" y="62" fill="#64748b" font-family="system-ui, sans-serif" font-size="11">Skill creation &amp;</text>
+    <text x="639" y="75" fill="#64748b" font-family="system-ui, sans-serif" font-size="11">optimization guides</text>
+  </g>
+</svg>
